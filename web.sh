@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-mongodb_host=mongodb.devopsju.online
+#mongodb_host=mongodb.devopsju.online
 
 TIMESTAMP=$(date +%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
@@ -66,3 +66,4 @@ VALIDATE $? "Copying roboshop.conf to local home folder"
 systemctl restart nginx &>> $LOGFILE
 
 VALIDATE $? "Restarting Nginx "
+
