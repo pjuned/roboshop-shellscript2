@@ -38,7 +38,7 @@ systemctl enable nginx &>> $LOGFILE
 
 VALIDATE $? "Enable nginx" 
 
-systemctl start nginx &>> $LOGFILE
+systemctl restart nginx &>> $LOGFILE
 
 VALIDATE $? "Starting Nginx"
 
