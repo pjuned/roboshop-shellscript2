@@ -70,7 +70,7 @@ unzip /tmp/user.zip &>> $LOGFILE
 VALIDATE $? "Unzipping "
 
 
-npm install &>> $LOGFILE
+npm install  &>> $LOGFILE
 
 VALIDATE $? "Installing dependencies"
 
