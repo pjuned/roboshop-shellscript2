@@ -7,7 +7,7 @@ N="\e[0m"
 
 TIMESTAMP=$(date +%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
-exec &>LOGFILE
+#exec &>LOGFILE
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 VALIDATE(){
