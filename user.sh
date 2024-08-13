@@ -92,6 +92,8 @@ systemctl start user &>> $LOGFILE
 
 VALIDATE $? "Starting user.service"
 
+cp /home/centos/roboshop-shellscript2/mongo.repo /etc/yum.repos.d/mongo.repo
+
 
 dnf install mongodb-org-shell -y &>> $LOGFILE
 
