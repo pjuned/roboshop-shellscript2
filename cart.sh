@@ -73,7 +73,7 @@ npm install &>> $LOGFILE
 
 VALIDATE $? "Installing dependencies"
 
-cp /home/centos/roboshop-shellscript2 /etc/systemd/system/cart.service &>> $LOGFILE
+cp /home/centos/roboshop-shellscript2/cart.service /etc/systemd/system/cart.service &>> $LOGFILE
 
 VALIDATE $? "copying cart.service in home folder"
 
@@ -89,6 +89,6 @@ systemctl start cart &>> $LOGFILE
 
 VALIDATE $? "Starting cart"
 
-    
+
 
 
