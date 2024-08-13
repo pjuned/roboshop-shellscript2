@@ -65,7 +65,7 @@ VALIDATE $? "downloading cart App"
 
 cd /app 
 
-unzip /tmp/cart.zip &>> $LOGFILE
+unzip -o /tmp/cart.zip &>> $LOGFILE
 
 VALIDATE $? "Unzipping the cart"
 
